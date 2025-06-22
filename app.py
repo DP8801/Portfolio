@@ -3,8 +3,13 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
+app.secret_key = os.environ.get("SECRET_KEY")
+
 
 # Configuration for email (you'll need to set these)
 EMAIL_HOST = 'smtp.gmail.com'
