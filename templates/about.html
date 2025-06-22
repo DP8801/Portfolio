@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block title %}About - Dev Bhupendra Pandya{% endblock %}
+
+{% block content %}
+<section class="py-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5">
+                    <h1 class="display-4 fw-bold">About Me</h1>
+                    <p class="lead text-muted">Get to know more about my journey and interests</p>
+                </div>
+                
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url_for('static', filename='images/profile.jpg') }}" 
+                             alt="Dev Bhupendra Pandya" 
+                             class="img-fluid shadow rounded">
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="mb-3">Hello! I'm Dev Bhupendra Pandya</h3>
+                        <p class="mb-3">
+                            I'm a dedicated Software Engineer with a Master’s degree in Software Engineering from Concordia University, Montreal, and a Bachelor's in Computer Engineering from Gujarat Technological University. I combine strong academic foundations with hands-on experience to deliver practical, high-impact solutions.
+
+
+                        </p>
+                        <p class="mb-3">
+                            During my tenure as a Software Engineering Intern at Bombardier, I worked on developing innovative tools for aerospace modeling using Python, AI/ML techniques, and modern web technologies. My broader experience includes everything from GNSS data processing at ISRO to building IoT-based healthcare prototypes and full-stack applications.
+
+                        </p>
+                        <p>
+                            Outside of work, I’m passionate about exploring emerging technologies, contributing to open-source projects, and staying current with the latest advancements in AI and software development.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <i class="fas fa-graduation-cap fa-2x text-primary mb-3"></i>
+                                <h5 class="card-title">Education</h5>
+                                <p class="card-text">
+                                    Master's in Software Engineering from Concordia University and 
+                                    Bachelor's in Computer Engineering from Gujarat Technological University.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <i class="fas fa-briefcase fa-2x text-primary mb-3"></i>
+                                <h5 class="card-title">Experience</h5>
+                                <p class="card-text">
+                                    Professional experience at Bombardier, ISRO, and VGEC, working on 
+                                    cutting-edge projects in aerospace, space technology, and healthcare.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <i class="fas fa-heart fa-2x text-primary mb-3"></i>
+                                <h5 class="card-title">Interests</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-robot text-primary me-2"></i> Artificial Intelligence & Machine Learning</li>
+                                    <li><i class="fas fa-satellite text-primary me-2"></i> Space Technology & GNSS</li>
+                                    <li><i class="fas fa-code text-primary me-2"></i> Full-Stack Development</li>
+                                    <li><i class="fas fa-microchip text-primary me-2"></i> IoT & Edge Computing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <i class="fas fa-users fa-2x text-primary mb-3"></i>
+                                <h5 class="card-title">Soft Skills</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-primary me-2"></i> Leadership & Team Management</li>
+                                    <li><i class="fas fa-check text-primary me-2"></i> Public Speaking</li>
+                                    <li><i class="fas fa-check text-primary me-2"></i> Event Management</li>
+                                    <li><i class="fas fa-check text-primary me-2"></i> Time Management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

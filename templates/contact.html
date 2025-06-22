@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - Dev Bhupendra Pandya{% endblock %}
+
+{% block content %}
+<section class="py-5 mt-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold">Get In Touch</h1>
+            <p class="lead text-muted">I'd love to hear from you. Send me a message!</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="row">
+                    <!-- Contact Form -->
+                    <div class="col-md-8 mb-4">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold mb-4">Send Message</h4>
+                                <form method="POST" id="contact-form">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold mb-4">Contact Info</h4>
+                                
+                                <div class="contact-item mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <div class="contact-icon me-3">
+                                            <i class="fas fa-envelope fa-lg text-primary"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-1">Email</h6>
+                                            <a href="mailto:devpandya651@gmail.com" class="text-muted">
+                                                devpandya651@gmail.com
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <div class="contact-icon me-3">
+                                            <i class="fas fa-phone fa-lg text-primary"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-1">Phone</h6>
+                                            <a href="tel:+15148278510" class="text-muted">
+                                                +1 (514)-827-8510
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <div class="contact-icon me-3">
+                                            <i class="fab fa-linkedin fa-lg text-primary"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-1">LinkedIn</h6>
+                                            <a href="https://www.linkedin.com/in/dev--pandya/" target="_blank" class="text-muted">
+                                                linkedin.com/in/dev-pandya
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <div class="d-flex align-items-center">
+                                        <div class="contact-icon me-3">
+                                            <i class="fas fa-map-marker-alt fa-lg text-primary"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-1">Location</h6>
+                                            <span class="text-muted">Montreal, Canada</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional CTA -->
+        <div class="row mt-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <div class="card border-0 shadow-sm bg-light">
+                    <div class="card-body py-4">
+                        <h5 class="fw-bold mb-3">Looking for Collaboration?</h5>
+                        <p class="text-muted mb-3">
+                            I'm always open to discussing new opportunities, whether it's a full-time position, 
+                            freelance project, or collaboration on innovative ideas.
+                        </p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="{{ url_for('resume') }}" class="btn btn-outline-primary">
+                                <i class="fas fa-file-alt me-2"></i>View Resume
+                            </a>
+                            <a href="{{ url_for('projects') }}" class="btn btn-outline-primary">
+                                <i class="fas fa-code me-2"></i>View Projects
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

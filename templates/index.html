@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section d-flex align-items-center min-vh-100">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <h1 class="display-4 fw-bold mb-3 animate-fade-in">
+                        Hi, I'm <span class="text-primary">Dev Bhupendra Pandya</span>
+                    </h1>
+                    <h2 class="h4 text-muted mb-4 animate-fade-in-delay">
+                        <span id="typed-roles" class="text-info"></span>
+                    </h2>
+                    <p class="lead mb-4 animate-fade-in-delay-2">
+                        A results-driven Software Engineer with strong experience in backend development, data processing pipelines, and AI integration.
+                    </p>
+                    <div class="hero-buttons animate-fade-in-delay-3">
+                        <a href="{{ url_for('projects') }}" class="btn btn-primary btn-lg me-3">View My Work</a>
+                        <a href="{{ url_for('contact') }}" class="btn btn-outline-primary btn-lg">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <div class="hero-image animate-fade-in-delay-1">
+                    <img src="{{ url_for('static', filename='images/profile.jpg') }}" 
+                         alt="Dev Bhupendra Pandya" 
+                         class="img-fluid rounded-circle shadow-lg profile-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Stats Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <div class="stat-item">
+                    <h3 class="display-6 fw-bold text-primary">3+</h3>
+                    <p class="text-muted">Years Experience</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="stat-item">
+                    <h3 class="display-6 fw-bold text-primary">4</h3>
+                    <p class="text-muted">Major Projects</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="stat-item">
+                    <h3 class="display-6 fw-bold text-primary">10+</h3>
+                    <p class="text-muted">Technologies</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="stat-item">
+                    <h3 class="display-6 fw-bold text-primary">2</h3>
+                    <p class="text-muted">Degrees</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Preview -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <h2 class="display-5 fw-bold">Technical Skills</h2>
+                <p class="lead text-muted">Technologies I work with</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="skill-category text-center">
+                    <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                    <h4>Languages</h4>
+                    <p class="text-muted">Python, JavaScript, Java, C++, SQL</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="skill-category text-center">
+                    <i class="fas fa-cogs fa-3x text-primary mb-3"></i>
+                    <h4>Frameworks</h4>
+                    <p class="text-muted">Flask, Django, Spring Boot, Angular, NodeJS</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="skill-category text-center">
+                    <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+                    <h4>Tools</h4>
+                    <p class="text-muted">Docker, Kubernetes, Git, PostgreSQL, Azure</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+  new Typed('#typed-roles', {
+    strings: [
+      'Software Engineer',
+      'AI/ML Enthusiast',
+      'Backend Developer',
+      'Full-Stack Developer',
+      'Cloud & DevOps Learner'
+    ],
+    typeSpeed: 50,
+    backSpeed: 30,
+    backDelay: 1500,
+    startDelay: 500,
+    loop: true,
+    showCursor: true,
+    cursorChar: '|'
+  });
+</script>
+{% endblock %}

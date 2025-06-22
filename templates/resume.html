@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+
+{% block title %}Resume - Dev Bhupendra Pandya{% endblock %}
+
+{% block content %}
+<section class="py-5 mt-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold">Resume</h1>
+            <p class="lead text-muted">My professional experience and qualifications</p>
+            <a href="{{ url_for('download_resume') }}" class="btn btn-primary btn-lg">
+                <i class="fas fa-download me-2"></i>Download PDF
+            </a>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <h2 class="fw-bold mb-3">Dev Bhupendra Pandya</h2>
+                        <p class="mb-2">
+                            <i class="fas fa-phone text-primary me-2"></i>+1 (514)-827-8510
+                            <span class="mx-3">|</span>
+                            <i class="fas fa-envelope text-primary me-2"></i>devpandya651@gmail.com
+                        </p>
+                        <p class="mb-0">
+                            <i class="fab fa-linkedin text-primary me-2"></i>
+                            <a href="https://www.linkedin.com/in/dev--pandya/" target="_blank">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="row mb-5">
+            <div class="col-lg-10 mx-auto">
+                <h3 class="fw-bold mb-4"><i class="fas fa-graduation-cap text-primary me-2"></i>Education</h3>
+                <div class="card border-0 shadow-sm mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h5 class="fw-bold">Master of Engineering, Software Engineering</h5>
+                                <p class="text-primary mb-1">Concordia University, Montreal, Canada</p>
+                            </div>
+                            <div class="col-md-4 text-md-end">
+                                <span class="badge bg-primary">September 2023 – May 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h5 class="fw-bold">Bachelor of Engineering, Computer Engineering</h5>
+                                <p class="text-primary mb-1">Gujarat Technological University, Ahmedabad, India</p>
+                            </div>
+                            <div class="col-md-4 text-md-end">
+                                <span class="badge bg-primary">July 2019 – May 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="row mb-5">
+            <div class="col-lg-10 mx-auto">
+                <h3 class="fw-bold mb-4"><i class="fas fa-cogs text-primary me-2"></i>Skills Summary</h3>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <h6 class="fw-bold text-primary">Languages</h6>
+                                <p class="mb-0">Python, JavaScript, SQL, Bash, JAVA, C, C++</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <h6 class="fw-bold text-primary">Frameworks</h6>
+                                <p class="mb-0">Spring, SpringBoot, Django, Flask, NodeJS, Angular, Apache Spark</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <h6 class="fw-bold text-primary">Tools</h6>
+                                <p class="mb-0">Kubernetes, Docker, GIT, PostgreSQL, MySQL, SQLite, PowerBI</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <h6 class="fw-bold text-primary">Platforms</h6>
+                                <p class="mb-0">Linux, Web, Windows, Arduino, Azure (Basic)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="row mb-5">
+            <div class="col-lg-10 mx-auto">
+                <h3 class="fw-bold mb-4"><i class="fas fa-briefcase text-primary me-2"></i>Professional Experience</h3>
+                
+                <!-- Bombardier -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body">
+                        <div class="row mb-3">
+                            <div class="col-md-8">
+                                <h5 class="fw-bold">Software Engineering Intern</h5>
+                                <p class="text-primary mb-1">Bombardier, Montreal, Canada</p>
+                            </div>
+                            <div class="col-md-4 text-md-end">
+                                <span class="badge bg-primary">September 2024 – May 2025</span>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Contributed to the development of a plugin to enhance the modeling capabilities of Capella</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Designed and implemented Python scripts using Python4Capella to automate data extraction</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Created a lightweight database-backed solution using SQLite for performance and traceability</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Streamlined internal modeling workflows by automating repetitive steps</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ISRO -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body">
+                        <div class="row mb-3">
+                            <div class="col-md-8">
+                                <h5 class="fw-bold">Research Intern – GNSS Data Processing</h5>
+                                <p class="text-primary mb-1">Indian Space Research Organisation (ISRO), Ahmedabad, India</p>
+                            </div>
+                            <div class="col-md-4 text-md-end">
+                                <span class="badge bg-primary">January 2023 – June 2023</span>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Developed a MATLAB-based Precise Point Positioning (PPP) algorithm achieving centimeter-level accuracy</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Implemented Python scripts to automate end-to-end pipeline for GNSS data processing</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Built data processing framework to handle satellite data in standard formats (RINEX)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- VGEC -->
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="row mb-3">
+                            <div class="col-md-8">
+                                <h5 class="fw-bold">Research Intern – IoMT and Edge Data Systems</h5>
+                                <p class="text-primary mb-1">Vishwakarma Government Engineering College (VGEC), Ahmedabad, India</p>
+                            </div>
+                            <div class="col-md-4 text-md-end">
+                                <span class="badge bg-primary">September 2022 – November 2022</span>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Collaborated on IoMT research project for preventive healthcare using edge-computing devices</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Developed working prototype using ESP32 and temperature sensor for patient vitals collection</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Implemented data logging mechanisms and visual dashboards for real-time health monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
